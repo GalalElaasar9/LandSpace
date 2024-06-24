@@ -15,12 +15,12 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #2163ff;
+  background-color: #6abe45;
   color: #fff;
 }
 
 ::selection {
-  background-color: #2163ff;
+  background-color: #6abe45;
   color: #fff;
 }
 
@@ -37,7 +37,7 @@ html::-webkit-scrollbar-track {
   background: #fff;
 }
 html::-webkit-scrollbar-thumb {
-  background-color: #2163ff;
+  background-color: #6abe45;
 }
 
 .link-btn {
@@ -55,9 +55,9 @@ html::-webkit-scrollbar-thumb {
   color: #334;
 }
 .link-btn:hover {
-  background: #2163ff;
+  background: #6abe45;
   color: #fff;
-  border-color: #2163ff;
+  border-color: #6abe45;
 }
 
 .heading {
@@ -99,26 +99,38 @@ section {
   letter-spacing: 0.0625em;
 }
 
+.navbar li{
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  margin-right: 15px;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #6abe45;
+    display: block;
+    left: 0px;
+    top: 0px;
+    transition: 0.5s all ease-in-out;
+  }
+  &:hover{
+    a{
+      color: #6abe45 !important;
+    }
+    &::before{
+      width: 100%;
+    }
+  }
+}
 .navbar li a {
   color: #334 !important;
-  transition: 0.5s all ease-in-out;
 }
 
-.navbar li a::after {
-  content: "";
-  position: relative;
-  width: 0px;
-  height: 2px;
-  background-color: #2163ff;
-  display: block;
-  left: 0px;
-  bottom: -6px;
-  transition: 0.5s all;
-}
 
-.navbar li a:hover::after {
-  width: 50%;
-}
 
 .navbar-light .navbar-nav .nav-link {
   padding-right: 15px;
@@ -126,9 +138,6 @@ section {
   font-weight: 400;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #2163ff !important;
-}
 
 .navbar-light .navbar-toggler {
   background-color: #fff;
@@ -285,11 +294,11 @@ section {
   font-weight: 600;
 }
 .Gallery .heading span {
-  color: #2163ff;
+  color: #6abe45;
 }
 .Gallery .gallery-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
@@ -335,7 +344,7 @@ section {
   font-weight: 600;
 }
 .offers .heading span {
-  color: #2163ff;
+  color: #6abe45;
 }
 .offers .content {
   gap: 15px;
@@ -419,20 +428,18 @@ section {
 }
 .contact .heading {
   font-weight: 600;
+  margin-bottom: 2rem;
 }
 .contact .heading span {
-  color: #2163ff;
+  color: #6abe45;
 }
 .contact .contact-title {
-  color: #2163ff;
+  color: #6abe45;
   font-size: 3rem;
   text-transform: capitalize;
-  color: #334;
-  color: #2597f4;
   font-weight: 400;
 }
 .contact .contact-sub-title {
-  color: #334;
   color: #334;
   font-size: 1.8rem;
   margin-top: 16px;
@@ -468,7 +475,7 @@ section {
 }
 .contact .boxes .box .icon svg {
   font-size: 3rem;
-  color: #2163ff;
+  color: #6abe45;
 }
 
 @media (max-width: 767px) {
@@ -476,13 +483,13 @@ section {
     font-weight: 600;
   }
   .contact .heading span {
-    color: #2163ff;
+    color: #6abe45;
   }
   .contact .contact-title {
     font-size: 2rem;
     text-transform: capitalize;
     color: #334;
-    color: #2163ff;
+    color: #6abe45;
   }
   .contact .boxes {
     gap: 15px;
@@ -498,20 +505,20 @@ section {
     font-weight: 600;
   }
   .contact .heading span {
-    color: #2163ff;
+    color: #6abe45;
   }
   .contact .contact-title {
     font-size: 2rem;
     text-transform: capitalize;
     color: #334;
-    color: #2163ff;
+    color: #6abe45;
   }
   .contact .boxes {
     gap: 15px;
     margin-top: 60px;
   }
   .contact .boxes .box {
-    flex: 0 0 48%;
+    flex: 1;
     text-align: center;
   }
 }
@@ -545,7 +552,7 @@ section {
   color: #334;
 }
 .footer .box a i {
-  color: #2163ff;
+  color: #6abe45;
   position: relative;
   padding-right: 0.5rem;
   top: 1px;
@@ -565,7 +572,7 @@ section {
   line-height: 1.5;
 }
 .footer .box span {
-  color: #2163ff;
+  color: #6abe45;
 }
 
 .top {
@@ -575,7 +582,7 @@ section {
   border: 0px;
   border: none;
   border-radius: 10px;
-  background-color: #2163ff;
+  background-color: #6abe45;
   width: 4rem;
   height: 4rem;
   color: #fff;
