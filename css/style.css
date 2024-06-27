@@ -768,6 +768,7 @@ section {
       span{
         a{
           color: #6abe45;
+          text-decoration: underline !important;
         }
       }
     }
