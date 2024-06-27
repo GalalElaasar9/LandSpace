@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+    <title>Reservation</title>
+</head>
+  <body>
+  <section class="banner">
+    <div class="title">
+      <h3>Reservation / <span><a href="./index.html">Home</a></span></h3>
+    </div>
+  </section>
+
+<!--------------------------------------------start of footer ---------------------------------->
+<section class="reservation">
+  <h1 class="heading"> BOOK YOUR <span>ESTIMATE</span></h1>
+  <div class="container">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="c4c72bc6-6194-4f73-9619-a785f3ffabe3">
+      <div class="inputs">
+        <div class="input name">
+          <label for="name">Name <span>*</span></label>
+          <input type="text" name="name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="input email">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="input phone">
+          <label for="phone">Phone Number <span>*</span></label>
+          <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number" required>
+        </div>
+        <div class="textarea address">
+          <label for="address">Home Address <span>*</span></label>
+          <textarea name="address" id="address" required></textarea>
+        </div>
+        <div class="textarea message">
+          <label for="message">Message <span>*</span></label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+        <div class="check_input">
+          <div class="check">
+            <input type="checkbox" name="Driveway" id="Driveway" value="Driveway">
+            <label for="Driveway">Driveway</label>
+            <input type="checkbox" name="Walkway" id="Walkway" value="Walkway">
+            <label for="Walkway">Walkway</label>
+            <input type="checkbox" name="Patio" id="Patio" value="Patio">
+            <label for="Patio">Patio</label>
+            <input type="checkbox" name="Steps" id="Steps" value="Steps">
+            <label for="Steps">Steps</label>
+            <input type="checkbox" name="Retaining wall" id="Retaining wall" value="Retaining wall">
+            <label for="Retaining wall">Retaining wall</label>
+            <input type="checkbox" name="Armour Stone" id="Armour Stone" value="Armour Stone">
+            <label for="Armour Stone">Armour Stone</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="Window Wells" id="Window Wells" value="Window Wells">
+            <label for="Window Wells">Window Wells</label>
+            <input type="checkbox" name="Repairs & Maintenance" id="Repairs & Maintenance" value="Repairs & Maintenance">
+            <label for="Repairs & Maintenance">Repairs & Maintenance</label>
+            <input type="checkbox" name="Sodding" id="Sodding" value="Sodding">
+            <label for="Sodding">Sodding</label>
+            <input type="checkbox" name="Planting" id="Planting" value="Planting">
+            <label for="Planting">Planting</label> 
+            <input type="checkbox" name="Sealing" id="Sealing" value="Sealing">
+            <label for="Sealing">Sealing</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="Synthetic Grass" id="Synthetic Grass" value="Synthetic Grass">
+            <label for="Synthetic Grass">Synthetic Grass</label>
+            <input type="checkbox" name="Pools" id="Pools" value="Pools">
+            <label for="Pools">Pools</label> 
+            <input type="checkbox" name="Concrete" id="Concrete" value="Concrete">
+            <label for="Concrete">Concrete</label> 
+            <input type="checkbox" name="Grading" id="Grading" value="Grading">
+            <label for="Grading">Grading</label>
+            
+            <input type="checkbox" name="Fences" id="Fences" value="Fences">
+            <label for="Fences">Fences</label>
+            <input type="checkbox" name="Asphalt" id="Asphalt" value="Asphalt">
+            <label for="Asphalt">Asphalt</label> 
+          </div>
+          <div class="check">
+            <input type="checkbox" name="Outdoor kitchen" id="Outdoor kitchen" value="Outdoor kitchen">
+            <label for="Outdoor kitchen">Outdoor kitchen</label>
+            <input type="checkbox" name="Landscape Lighting" id="Landscape Lighting" value="Landscape Lighting">
+            <label for="Landscape Lighting">Landscape Lighting</label> 
+            <input type="checkbox" name="Natural Stone" id="Natural Stone" value="Natural Stone">
+            <label for="Natural Stone">Natural Stone</label> 
+            <input type="checkbox" name="Waterproofing" id="Waterproofing" value="Waterproofing">
+            <label for="Waterproofing">Waterproofing</label> 
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="submit">
+    </form>
+  </div>
+</section>
+<!--------------------------------------------end of footer ---------------------------------->
+<button class="top" type="button"><i class="las la-angle-double-up"></i></button>
+</body>
+<script>
+  $('.dropify').dropify();
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/Script.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

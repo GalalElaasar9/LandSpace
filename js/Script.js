@@ -30,20 +30,20 @@ $(window).scroll(function () {
   scrolling = $(window).scrollTop();
 });
 
-let navItems = document.querySelectorAll(".nav-item");
-let navbarCollapse = document.querySelector(".navbar-collapse");
-let navbarToggler = document.querySelector(".navbar-toggler");
+// let navItems = document.querySelectorAll(".nav-item");
+// let navbarCollapse = document.querySelector(".navbar-collapse");
+// let navbarToggler = document.querySelector(".navbar-toggler");
 
-navItems.forEach((navItem) => {
-  navItem.addEventListener("click", () => {
-    navbarCollapse.style.display = "none";
-  });
-});
+// navItems.forEach((navItem) => {
+//   navItem.addEventListener("click", () => {
+//     navbarCollapse.style.display = "none";
+//   });
+// });
 
-navbarToggler.addEventListener("click", () => {
-  if (navbarToggler.classList.contains("collapse")) {
-    navbarCollapse.style.display = "none";
-  } else {
-    navbarCollapse.style.display = "block";
-  }
-});
+// navbarToggler.addEventListener("click", () => {
+//   if (navbarToggler.classList.contains("collapse")) {
+//     navbarCollapse.style.display = "none";
+//   } else {
+//     navbarCollapse.style.display = "block";
+//   }
+// });
