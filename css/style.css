@@ -123,23 +123,21 @@ section {
   align-items: center;
   position: relative;
   margin-right: 15px;
-  &::before{
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 2px;
-    background-color: #6abe45;
-    display: block;
-    left: 0px;
-    top: 0px;
-    transition: 0.5s all ease-in-out;
-  }
-  &:hover{
+  &.active{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #6abe45;
+      display: block;
+      left: 0px;
+      top: 0px;
+      transition: 0.5s all ease-in-out;
+    }
     a{
       color: #6abe45 !important;
-    }
-    &::before{
-      width: 100%;
     }
   }
 }
