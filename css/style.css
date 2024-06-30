@@ -272,7 +272,7 @@ section {
     .text{
       flex: 0 0 45%;
       h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-transform: capitalize;
         color: #334;
         font-weight: 600;
@@ -281,7 +281,6 @@ section {
         font-size: 1rem;
         line-height: 2;
         color: #777;
-        padding: 1rem 0;
       }
     }
   }
